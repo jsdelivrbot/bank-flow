@@ -5,10 +5,30 @@
     <title>Tiny example</title>
   </head>
   <body>
-    
     <script src="./node_modules/viz.js/viz.js"></script>
     <script>
-    	document.body.innerHTML += Viz("digraph { a -> b; }");
+    	var dot = `
+	    	digraph graphname{
+			    rankdir=LR; 
+			    wages [width="1"];
+			    lloydsCurrent [label="lloyds current"];
+			    tsbCurrent [label="tsb current"];
+			    tsbSavings [label="tsb savings"];
+			    halifaxCurrent [label="halifax current"];
+			    halifaxIsa [label="halifax isa"];
+			    netflix;
+			    giffGaff [label="giff gaff"];
+			    santander [label="santander current"];
+			    
+			    wages -> lloydsCurrent [label="1650"];
+			    lloydsCurrent -> tsbCurrent [size="12", color="red"];
+			    lloydsCurrent -> netflix [color="light green", label="7.49"];
+			    lloydsCurrent -> giffGaff [color="light green", label="5"];
+			    lloydsCurrent -> halifaxCurrent [dir="both", label="800"];
+			    lloydsCurrent -> halifaxIsa [label="200"];
+			    tsbCurrent -> tsbSavings [label="250"];
+				}`;
+    	document.body.innerHTML += Viz(dot);
     </script>
     
   </body>
