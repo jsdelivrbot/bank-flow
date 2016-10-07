@@ -1,0 +1,19 @@
+{
+  "name": "bank-flow",
+  "version": "1.0.0",
+  "description": "Play around with graph viz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TAQ2/bank-flow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TAQ2/bank-flow/issues"
+  },
+  "homepage": "https://github.com/TAQ2/bank-flow#readme"
+}
