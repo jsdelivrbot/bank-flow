@@ -3,8 +3,7 @@ Play around with graph viz
 
 https://taq2.github.io/bank-flow/
 
-
-To do:
-* merge branches
+Road map:
 * credits
-* save a canvas to the directory and be able to serve the image as a URL
+* use babel-inline plugin to use a .dot file
+* ability to view/save as image
