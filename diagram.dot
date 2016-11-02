@@ -1,4 +1,6 @@
-digraph "bank-flow"{
+digraph "bank-flow" {
+  layout = circo
+
   wages [width="1"];
   lloydsCurrent [label="lloyds current\n4%"];
   tsbCurrent [label="tsb current\n5%"];
