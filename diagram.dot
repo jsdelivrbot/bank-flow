@@ -1,0 +1,33 @@
+digraph "bank-flow"{
+  wages [width="1"];
+  lloydsCurrent [label="lloyds current\n4%"];
+  tsbCurrent [label="tsb current\n5%"];
+  tsbSavings [label="tsb savings\n5%"];
+  halifaxCurrent [label="halifax current\n£5pm"];
+  halifaxIsa [label="halifax isa\n3.5%"];
+  netflix;
+  giffGaff [label="giff gaff"];
+  santander [label="santander current\n3%"];
+  salvationArmy [label="salvation army"];
+  waterAid [label="water aid"];
+  amex;
+  redCross [label="red cross"];
+  nationwideCurrent [label="nationwide current"];
+
+  santander -> waterAid [color="lightblue", label="£2"];
+  santander -> redCross [color="lightblue", label="£2"];
+  wages -> lloydsCurrent [label="???"];
+  lloydsCurrent -> netflix [color="lightgreen", label="£7.49"];
+  lloydsCurrent -> giffGaff [color="lightgreen", label="£5"];
+  lloydsCurrent -> salvationArmy [color="lightblue", label="£2"];
+  lloydsCurrent -> waterAid [color="lightblue", label="£2"];
+  lloydsCurrent -> halifaxCurrent [label="£800"];
+  lloydsCurrent -> nationwideCurrent [label="£1000"];
+  nationwideCurrent -> tsbCurrent [label="£500"];
+  halifaxCurrent -> lloydsCurrent [label="£800"];
+  lloydsCurrent -> halifaxIsa [label="£200"];
+  tsbCurrent -> tsbSavings [label="£250"];
+  tsbCurrent -> lloydsCurrent [label="£200"];
+  halifaxCurrent -> waterAid [color="lightblue", label="£2"];
+  halifaxCurrent -> amex [color="lightblue", label="credit bill"];
+}
