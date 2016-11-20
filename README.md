@@ -2,7 +2,7 @@
 
 good ol' graphviz
 
-<img src="https://cdn.rawgit.com/TAQ2/bank-flow/master/diagram.svg" />
+<img src="https://rawgit.com/TAQ2/bank-flow/master/diagram.svg" />
 
 ## Road Map
 

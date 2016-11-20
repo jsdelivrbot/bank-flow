@@ -19,7 +19,7 @@ digraph "bank-flow" {
   santander -> waterAid [color="lightblue", label="£2"];
   santander -> redCross [color="lightblue", label="£2"];
   wages -> lloydsCurrent [label="???"];
-  lloydsCurrent -> netflix [color="lightgreen", label="£7.49"];
+  lloydsCurrent -> netflix [color="lightgreen", label="£8.99"];
   lloydsCurrent -> giffGaff [color="lightgreen", label="£5"];
   lloydsCurrent -> salvationArmy [color="lightblue", label="£2"];
   lloydsCurrent -> waterAid [color="lightblue", label="£2"];
