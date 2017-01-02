@@ -121,7 +121,7 @@
 <g id="edge13" class="edge"><title>tsbCurrent&#45;&gt;tsbSavings</title>
 <path fill="none" stroke="black" d="M946.715,-175.013C954.248,-144.944 966.826,-94.7324 975.308,-60.8755"/>
 <polygon fill="black" stroke="black" points="978.763,-61.4844 977.798,-50.9336 971.973,-59.7833 978.763,-61.4844"/>
-<text text-anchor="middle" x="950.511" y="-120.744" font-family="Times,serif" font-size="14.00">£25</text>
+<text text-anchor="middle" x="947.011" y="-120.744" font-family="Times,serif" font-size="14.00">£250</text>
 </g>
 <!-- halifaxCurrent&#45;&gt;lloydsCurrent -->
 <g id="edge11" class="edge"><title>halifaxCurrent&#45;&gt;lloydsCurrent</title>
