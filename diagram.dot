@@ -31,6 +31,7 @@ digraph "bank-flow" {
   halifaxCurrent -> lloydsCurrent [label="£800"];
   lloydsCurrent -> halifaxIsa [label="£200"];
   tsbCurrent -> tsbSavings [label="£250"];
+  tsbCurrent -> lloydsCurrent [label="£200"];
   halifaxCurrent -> waterAid [color="lightblue", label="£2"];
   halifaxCurrent -> amex [color="lightblue", label="credit bill"];
 }
