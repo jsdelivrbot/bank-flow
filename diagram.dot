@@ -5,20 +5,23 @@ digraph "bank-flow" {
   lloydsCurrent [label="lloyds current\n2%"];
   tsbCurrent [label="tsb current\n3%"];
   tsbSavings [label="tsb savings\n5%"];
-  halifaxCurrent [label="halifax current\n£5pm"];
+  halifaxCurrent [label="halifax current\n£3pm"];
   halifaxIsa [label="halifax isa\n3.5%"];
   netflix;
   giffGaff [label="giff gaff"];
   mAndS [label="m&s current\n£10pm"];
   salvationArmy [label="salvation army"];
   waterAid [label="water aid"];
-  amex;
+  tsbCreditCard [label="tsb credit card"];
   redCross [label="red cross"];
   nationwideCurrent [label="nationwide current\n5%"];
 
+  halifaxCurrent -> lloydsCurrent [label="£800"];
+  halifaxCurrent -> waterAid [color="lightblue", label="£2"];
+  halifaxCurrent -> redCross [color="lightblue", label="£2"];
+  mAndS -> lloydsCurrent [label="£1000"];
   mAndS -> waterAid [color="lightblue", label="£2"];
   mAndS -> redCross [color="lightblue", label="£2"];
-  wages -> lloydsCurrent [label="???"];
   lloydsCurrent -> netflix [color="lightgreen", label="£8.99"];
   lloydsCurrent -> giffGaff [color="lightgreen", label="£5"];
   lloydsCurrent -> salvationArmy [color="lightblue", label="£2"];
@@ -26,12 +29,10 @@ digraph "bank-flow" {
   lloydsCurrent -> halifaxCurrent [label="£800"];
   lloydsCurrent -> nationwideCurrent [label="£1000"];
   lloydsCurrent -> mAndS [label="£1000"];
-  mAndS -> lloydsCurrent [label="£1000"];
-  nationwideCurrent -> tsbCurrent [label="£500"];
-  halifaxCurrent -> lloydsCurrent [label="£800"];
+  lloydsCurrent -> tsbCreditCard [color="lightblue", label="credit bill"];
   lloydsCurrent -> halifaxIsa [label="£200"];
+  nationwideCurrent -> tsbCurrent [label="£500"];
+  nationwideCurrent -> lloydsCurrent [label="£500"];
   tsbCurrent -> tsbSavings [label="£250"];
-  tsbCurrent -> lloydsCurrent [label="£200"];
-  halifaxCurrent -> waterAid [color="lightblue", label="£2"];
-  halifaxCurrent -> amex [color="lightblue", label="credit bill"];
+  wages -> lloydsCurrent [label="???"];
 }
